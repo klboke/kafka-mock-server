@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <groupId>com.github.klboke</groupId>
+    <artifactId>kafka-mock-server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>kafka-mock-server</name>
+
+    <modules>
+        <module>mock-server</module>
+        <module>producer</module>
+        <module>consumer</module>
+        <module>mirror-maker</module>
+    </modules>
+
+    <description>嵌入式 kafka、kafka 集群数据同步、kafka 消息发送消费等场景测试</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-boot.version>2.4.5</spring-boot.version>
+    </properties>
+
+</project>
