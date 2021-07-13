@@ -13,9 +13,11 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = KafkaMockServer9097.class)
-@EmbeddedKafka( partitions = 1,
+@EmbeddedKafka(
+    partitions = 12,
+    zookeeperPort = 59661,
     brokerProperties = {
-        "listeners=PLAINTEXT://127.0.0.1:9097",
+        "listeners=PLAINTEXT://172.26.202.128:9097",
         "port=9097"
     })
 public class KafkaMockServer9097 {
